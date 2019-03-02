@@ -190,7 +190,7 @@ body{
     align: center;
   }
 }
-@media screen and (min-width:400px) {
+@media screen and (min-width:700px) {
   #text{
     display: inline-block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
