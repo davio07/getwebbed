@@ -1,0 +1,557 @@
+/* All */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+@media screen and (max-width:400px) {
+  #text{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2px 0 20px 10px;
+    font-size: 10vw;
+    width: 40%;
+    background-color: transparent;
+    transition: 3s;  }
+  #text::before{
+    content: "";
+    animation-name: continfo;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font: smaller;
+    height:auto;
+    /* position: fixed; */
+    background-color: rgba(93, 30, 129, 0.863);
+    color:rgba(255, 255, 255, 0.795);
+    font-size: 8px;
+    padding: 20% 20px 10px 20px;
+    margin: 0px 1px 0 0px ;
+    width: fit-content;
+    text-align: center;
+    bottom:0;
+  }
+  footer img{
+    width: 40px
+  }
+  #header1{
+    padding-top: 50px;
+    padding-bottom: auto;
+  }
+  .container{
+    position: fixed;
+    height: auto;
+    width: 100%;
+    padding: 10px 5px 20px 5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 60%, rgba(255, 255, 255, 0.486));
+    bottom: 35px;
+    color: white;
+  }
+
+  h1{
+    font-size: 120%;
+  }
+  #navbar{display: none;}
+  #navmenu{
+    padding: 0 0 0 0;
+    display: flex;
+    position: fixed;
+    right: 10px;
+    top:0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 248, 194, 0.959);
+  }
+  #navmobile{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    text-align: right;
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: rgba(65, 206, 159, 0.986);
+    position: fixed;
+    top:0;
+    color: white;
+    padding: 5px 5px 5px 5px;
+  }
+  .closeme{
+    display: block;
+    top: 2px;
+    right: 3px;
+    padding: inherit;
+    position: fixed;
+    font-size: 9px;
+  }
+  .hr1{width: 10px;
+  display: inline-block;
+  -webkit-animation-name: hr;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: hr;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  }
+  @keyframes hr {
+    0%{ width: 12px;}
+    50%{ width: 15px}
+    100%{width: 18px}
+  }
+  .getstartedc{
+    display: none;
+  }
+ .getstartedm{
+   color: black;
+   display: block;
+   margin: auto;
+   font-size: 10px;
+   padding: 10px 10px 10px 10px;
+   border: 1px solid rgba(134, 129, 52, 0.623);
+   width: auto;
+   text-align: center;
+   background-color: white;
+   transition: 3s;
+  }
+  .getstartedm:hover{
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+    background-color: purple;
+  }
+  .getstartedm:hover img{
+    display: inline;
+     
+  }
+  .gsbtm{
+    margin-bottom: 20px;
+    margin-left:;}
+    
+  .navbtnsm{
+    font-size: 8px;
+    display: flow-root;
+    margin: 15px 2px 0 2px;
+   }
+   .home{
+     float: left;
+     margin-left: 1px;
+     color:rgb(206, 159, 32) ;
+   }
+   .prinfo{
+     text-align: center;
+     border-radius: 10px;
+     width: 80%;
+     height: auto;
+     margin: 0 0 10px 0;
+     padding: 10px 10px 10px 10px;
+     /* background-color: grey; */
+     display: inline-block;
+   }
+   .prinfo p:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px 10px 10px 10px;
+  }
+  .smallinfo1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size-adjust: auto;
+    font-size: 13px;
+    height:auto;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(100, 100, 100, 0.1);
+  }
+  .smallinfo1 img{
+    width: 40px;
+    display: none;
+  }
+  .sialign{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size-adjust: auto;
+    font-size: 13px;
+    height:auto;
+    padding: 20px 0 20px 0;
+    background-color: rgba(100, 100, 100, 0.1);
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    /* margin-right: -40px; */
+    background-color: aliceblue;
+    box-shadow: 2px 3px 2px grey;
+  }
+  .sialign img{
+    width:20px;
+    align: center;
+  }
+}
+@media screen and (min-width:400px) {
+  #text{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    padding: 2px 0 20px 10px;
+    width: 40%;
+    background-color: transparent;
+    transition: 3s;
+  }
+  #text::before{
+    content: "";
+    animation-name: continfo;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  #header1{
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  footer{
+    background:  linear-gradient(0deg, rgb(247, 247, 247) 50%, transparent);
+    color:rgba(49, 49, 49, 0.747);
+    position: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding: 10px 2px 10px 2px;
+    margin: 0 0 0 0 ;
+    width: 100%;
+    text-align: center;
+    bottom:0;
+  }
+  footer img{
+    width: 40px
+  }
+  .container{
+    position: fixed;
+    height: auto;
+    width: 100%;
+    padding: 20px 15px 2px 5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 60%, transparent);
+    bottom: 20px;
+  }
+  .getstartedm{display: none}
+
+  .getstartedc{
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 30px;
+    /* border: 1px solid rgb(206, 159, 32); */
+    width: 20%;
+    text-align: center;
+    /* background-color: rgba(206, 160, 32, 0.534); */
+    transition: 1s;
+  }
+  .getstartedc img{
+    width: 40px;
+  }
+  .gsbtm{
+    margin-bottom: 50px;
+    margin-top: -30px;
+  }
+  .getstartedc:hover{
+    font-weight: bolder;
+    color: rgb(199, 94, 24);
+    /* border: 1px solid rgb(206, 159, 32); */
+    /* background-color: rgb(0, 128, 128); */
+    transform: rotate(-10deg)
+  }
+  .navbtnsm{display: none;}
+  .closeme{display: none;}
+  #navmenu{display: none;}
+  #navbar{
+    padding: 5px 10px 5px 10px;
+  }
+  #navmobile{
+    display: none;}
+    .navbtns{
+      display: inline-block;
+      margin: 0 10px 0 4px;
+      padding: 2px 2px 2px 2px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      transition: color 1s, background-color 1s;
+     }
+     .navbtns:hover{
+       color: black;
+       background-color: white;
+     }
+    .home{float: left;
+      margin-left: 10px;
+    }
+    .prinfo{
+      text-align: center;
+      border-radius: 10px;
+      width: 45%;
+      height: auto;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      /* background-color: rgb(206, 2, 2); */
+      display: inline-block;
+    }
+    .prinfo p:nth-child(even){
+      background-color: rgba(0, 0, 0, 0.03);
+      padding: 10px 10px 10px 10px;
+    }
+    .smallinfo1{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size-adjust: auto;
+      font-size: 10px;
+      height:auto;
+      padding: 30px 20px 120px 20px;
+      background-color: rgba(100, 100, 100, 0.1);
+    }
+    .smallinfo1 p:nth-child(1){
+      width: 40%;
+      padding: 10px 0 0 20px
+    }
+    /* .smallinfo1{
+     display: none;
+    } */
+    .sialigncontainer{
+      margin: auto;
+      align-content: center
+    }
+    .sialign{
+      align-self: center;
+      width: fit-content;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size-adjust: auto;
+      font-size: 10px;
+      height:auto;
+      padding: 20px 20px 20px 20px;
+      background-color: rgb(255, 255, 255);
+      display: inline-block;
+      width: 20%;
+      margin: auto;
+      margin-bottom: .5cm;
+      margin-left:10px; 
+      border-radius: 1.5px;
+      box-shadow: .2px 1.2pt 1px rgba(105, 105, 105, 0.192) 
+    }
+    .sialign img{
+      width: 40px;
+      align-self: center
+    } 
+    
+    /* .bg-polygon{
+      background: linear-gradient(0deg, #71b6abd0 40%, transparent) white;
+      overflow: hidden;
+      width: 100%;
+      height:100%;
+      position: fixed;
+      opacity:.5;
+      top: 70%;
+      transform: skewY(165deg)
+    } */
+}
+/* @media screen and (min-height:400px){
+  .bg-polygon{
+    top: 50%;
+  }
+} */
+#html{
+  margin-right: 0;
+  padding: 0 0 0 0;
+  width: 100%
+}
+#body{
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  background-image: url("./web2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation-name: GetWebbed;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+/* @keyframes GetWebbed {
+  10%{background-image: url("./business.jpg");}
+  30%{background-image: url("./eveny.png");}
+  70%{background-image: url("./religious.jpg");}
+  100%{background-image: url("./web-design.jpg");}
+} */
+nav{
+  position: fixed;
+  height: auto;
+  font-size: 10px;
+  margin: auto;
+  padding: 10px 20px 10px 10px;
+  top: 40px;
+  color:white;
+  background:linear-gradient(rgba(0, 0, 0, 0.404), transparent);
+  float: right; 
+  width: 100%;
+  text-align: right;
+  padding-bottom: 10px;
+  margin-left: -20px;
+}
+.navpr{
+  top:0
+}
+#contact{
+  transition: height 2s, width 2s, ;
+  display:none;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  /* padding: 30px 30px 30px 30px; */
+  text-align: center;
+}
+.contdet{
+  opacity: 2;
+  margin: auto;
+  top: 23px;
+  height: 50%;
+  width: 50%;
+  background-color: red;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+/* @keyframes continfo {
+  10%{content: "Business & e-commerce websites,";
+}
+  30%{content: "Business & e-commerce websites, religious pages,";
+}
+  70%{content: "Business & e-commerce websites, religious pages, blogs, event management services, ";
+}
+  100%{content: "Business & e-commerce websites, religious pages, blogs, event management services, NGO's and organisations...";
+}
+} */
+#body1{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  opacity:.8;
+  background: rgba(10, 196, 156, 0.952);
+}
+main{
+  position: absolute;
+  width:100%;
+  height:auto;
+}
+/* Pricing */
+#priceheader
+{
+  padding: 200px 0 10px 0 ;
+  background-image: url('./business.jpg');
+  background-attachment: scroll;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-color: rgba(77, 224, 224, 0.26);
+  background-size: cover;
+  height: auto;
+}
+.imgs{
+  width: 50;
+  box-shadow: 0px 2px 1px rgba(105, 105, 105, 0.356), 0px 1px 1px rgba(160, 160, 160, 0.356);
+}
+
+.pricing{
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 5px 0 5px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.h1bg{
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.555), transparent);
+  padding: 10px 0 10px 40px;
+  margin-bottom: -10px;
+  margin-left: -40px;
+  color: antiquewhite;
+}
+h3{
+  text-align: left;
+  /* font-family: serif; */
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.quote{
+  font-style: italic;
+  font-family: garamond;
+  font-size: 15px;
+  color:grey;
+  height:auto;
+  padding:5px 10px 5px 10px;
+  margin: 20px 10px 20px 30px;
+  width: 60%;
+  border-left: 1px solid grey;
+
+}
+.priceintro{
+  color: grey;
+  font-family: arial, sans-serif;
+  font-weight: lighter;
+  margin: auto;
+  font-size: 12px;
+  text-align: center;
+}
+.priceintro1{
+  font-family: garamond, sans-serif;
+  font-size: 15px;
+  height:auto;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  /* background-color: rgba(100, 100, 100, 0.1); */
+}
+.serviceprice{
+  padding-left: 10px;
+}
+.basic{
+  /* background-color: yellow; */
+  text-align: center;
+  color: black
+}
+.premium{
+  /* background-color: grey; */
+  text-align: center;
+  color: white
+}
+.mega{
+  position: inherit;
+  opacity: 0.1;
+  text-align: center;
+  background-color: purple;
+  color: white;
+}
+.smallinfo{
+  font-variant-ligatures: normal;
+  font-size-adjust: auto;
+  font-size: .1vw;
+  padding: 20px 20px 20px 20px;
+}
+
+/* background colors */
+.bg-brown{
+  background-color: rgba(150, 50, 2, 0.2);
+}
+.bg-grey{
+  background-color: rgba(100, 100, 100, 0.3);
+}
+.bg-yellow-grey{
+  background-image: linear-gradient(45deg, rgba(105, 80, 187, 0.445) 80%, rgba(212, 160, 46, 0.685));
+}
+.bg-teal-white{
+  background-image: linear-gradient(45deg, rgba(167, 147, 147, 0) 80%, rgba(140, 165, 165, 0.712));
+}
