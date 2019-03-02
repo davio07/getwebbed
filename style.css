@@ -12,7 +12,7 @@ body{
     display: inline-block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 2px 0 20px 10px;
-    font-size: 1vw;
+    font-size: 10px;
     width: 40%;
     background-color: transparent;
     transition: 3s;  }
